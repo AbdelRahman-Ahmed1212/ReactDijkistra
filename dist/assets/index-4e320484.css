@@ -1,0 +1,95 @@
+* {
+  font-family: sans-serif;
+  font-family: monospace;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  color: #5e6463;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+  box-shadow: 0 1px 20px #a6c3bf;
+}
+input {
+  color: #fff;
+  background-color: #3bd1c0;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 800;
+}
+input:hover {
+  background-color: #3bd1c0db;
+}
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+  border: 1px solid #9ea2a1;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+}
+.wall {
+  background-color: #f70776;
+  background-clip: content-box;
+}
+.start {
+  background-image: url(data:image/png;base64,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);
+}
+.end {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVR4nO2YvSuGYRTGfyKZjEwGk/KVKPI657V4SvZ3YLHYDDIpu7JJ+QNMBrsMZhuRUhYGi9hMErn0vD7Kx+B5i/tN51dneLrvu+dcXffH6UAQBN+Szcwpj7dvjdMkpyRjWcaOnDMZd3Ik41HGhZzd6niJAepFgMbokbMq46qa7M/jVMaSRmlLIuC8F+VRMOmvkbvj7MmoqJvmIjnI6VCZBTkH6QR8jGsZm3JmZQxpmNb3ZEdpkzMoY1rGhowTOU9va+tFQM1BCPBwQLGFihCH2OMWUlyj5/GQES+xopTw9IWcopjzcECxhYry/4o540HGvpwVlZlSiS6N05LPVYVGOZ0yJqvjzlE9CTiWsagR2ousl9EvY03OTRIB2afGVq1U3TEm5GzLuS+UuHEpZz3vYCQT8EHMS+tk9rW1ciDn9lPL5VDOlpx5lekTNNT8s98Q8KdkISAxWTiQmCwcSEwWDiQmCwcSk4UDQRDwBzwDzWmdOjUCmIIAAAAASUVORK5CYII=);
+}
+.end,
+.start {
+  background-size: cover;
+  padding: 2px;
+  width: 15px;
+  height: 15px;
+  transform: scale(0.8);
+  transition: all 0.5s ease-in-out;
+}
+.wall {
+  animation: wallanimator 1.5s ease 0s 1;
+}
+.wall,
+.visited {
+  border-radius: 13px;
+  background-clip: content-box;
+}
+@keyframes wallanimator {
+  0% {
+    opacity: 0.5;
+    background-color: #f7077793;
+  }
+  to {
+    opacity: 1;
+    background-color: #f70776;
+  }
+}
+.visited {
+  background-color: #8ef6e4;
+}
+.path {
+  background-color: #7c73e6;
+}
+.instructions {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: large;
+}
+* {
+  overflow: hidden;
+}
